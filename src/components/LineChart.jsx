@@ -45,7 +45,13 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
       }}
       colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }} // added
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
-      xScale={{ type: "point" }}
+      xScale={{
+        type: 'time',
+        format: '%Y-%m-%d',
+        useUTC: false,
+        precision: 'day',
+    }}
+    xFormat="time:%Y-%m-%d"
       yScale={{
         type: "linear",
         min: "auto",
@@ -54,18 +60,15 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
         reverse: false
       }}
       yFormat=' >-.2f'
-      curve='catmullRom'
+      // curve='catmullRom'
       axisTop={null}
       axisRight={null}
       axisBottom={{
-        orient: "bottom",
-        tickSize: 0,
-        tickPadding: 5,
-        tickRotation: 0,
-        legend: isDashboard ? undefined : "transportation", // added
-        legendOffset: 36,
-        legendPosition: "middle"
-      }}
+        format: '%b %d',
+        tickValues: 'every 2 days',
+        legend: 'time scale',
+        legendOffset: -12,
+    }}
       axisLeft={{
         orient: "left",
         tickValues: 5, // added

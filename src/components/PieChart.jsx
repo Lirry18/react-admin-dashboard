@@ -50,7 +50,7 @@ const PieChart = () => {
       arcLinkLabelsTextColor={colors.grey[100]}
       arcLinkLabelsThickness={2}
       arcLinkLabelsColor={{ from: "color" }}
-      enableArcLabels={false}
+      enableArcLabels={true}
       arcLabelsRadiusOffset={0.4}
       arcLabelsSkipAngle={7}
       arcLabelsTextColor={{
@@ -96,7 +96,7 @@ const PieChart = () => {
             {
               on: "hover",
               style: {
-                itemTextColor: "#000"
+                itemTextColor: "#999"
               }
             }
           ]

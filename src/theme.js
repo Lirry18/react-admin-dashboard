@@ -20,8 +20,8 @@ export const tokens = (mode) => ({
           100: "#d0d1d5",
           200: "#a1a4ab",
           300: "#727681",
-          400: "#1F2A40",
-          500: "#141b2d",
+          400: "#191d3a",
+          500: "#080c28", 
           600: "#101624",
           700: "#0c101b",
           800: "#080b12",
@@ -31,8 +31,8 @@ export const tokens = (mode) => ({
           100: "#dbf5ee",
           200: "#b7ebde",
           300: "#94e2cd",
-          400: "#70d8bd",
-          500: "#4cceac",
+          400: "#00d394",
+          500: "#00d394",
           600: "#3da58a",
           700: "#2e7c67",
           800: "#1e5245",
@@ -79,7 +79,7 @@ export const tokens = (mode) => ({
           300: "#0c101b",
           400: "#f2f0f0", // manually changed
           500: "#141b2d",
-          600: "#1F2A40",
+          600: "#191d3a",
           700: "#727681",
           800: "#a1a4ab",
           900: "#d0d1d5",
@@ -89,8 +89,8 @@ export const tokens = (mode) => ({
           200: "#1e5245",
           300: "#2e7c67",
           400: "#3da58a",
-          500: "#4cceac",
-          600: "#70d8bd",
+          500: "#00d394",
+          600: "#00d394",
           700: "#94e2cd",
           800: "#b7ebde",
           900: "#dbf5ee",
@@ -133,7 +133,7 @@ export const themeSettings = (mode) => {
               main: colors.primary[500],
             },
             secondary: {
-              main: colors.greenAccent[500],
+              main: colors.greenAccent[300],
             },
             neutral: {
               dark: colors.grey[700],
@@ -150,7 +150,7 @@ export const themeSettings = (mode) => {
               main: colors.primary[100],
             },
             secondary: {
-              main: colors.greenAccent[500],
+              main: colors.greenAccent[300],
             },
             neutral: {
               dark: colors.grey[700],
@@ -163,30 +163,30 @@ export const themeSettings = (mode) => {
           }),
     },
     typography: {
-      fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+      fontFamily: ["Karla", "sans-serif"].join(","),
       fontSize: 12,
       h1: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+        fontFamily: ["Karla", "sans-serif"].join(","),
         fontSize: 40,
       },
       h2: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+        fontFamily: ["Karla", "sans-serif"].join(","),
         fontSize: 32,
       },
       h3: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+        fontFamily: ["Karla", "sans-serif"].join(","),
         fontSize: 24,
       },
       h4: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+        fontFamily: ["Karla", "sans-serif"].join(","),
         fontSize: 20,
       },
       h5: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+        fontFamily: ["Karla", "sans-serif"].join(","),
         fontSize: 16,
       },
       h6: {
-        fontFamily: ["Source Sans Pro", "sans-serif"].join(","),
+        fontFamily: ["Karla", "sans-serif"].join(","),
         fontSize: 14,
       },
     },
